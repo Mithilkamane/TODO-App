@@ -13,12 +13,12 @@ function addTodo() {
   const li = document.createElement("li");
   li.innerText = input.value;
 
-  // mark complete
+
   li.addEventListener("click", () => {
     li.classList.toggle("completed");
   });
 
-  // delete button
+  
   const delBtn = document.createElement("button");
   delBtn.innerText = "X";
   delBtn.addEventListener("click", () => {
@@ -30,3 +30,4 @@ function addTodo() {
 
   input.value = "";
 }
+
